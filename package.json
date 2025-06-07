@@ -1,8 +1,7 @@
 {
-  "name": "turborepo-shadcn-ui",
-  "version": "1.5.1",
+  "name": "prabhatdwivedi",
+  "version": "0.0.1",
   "private": true,
-  "license": "MIT",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
