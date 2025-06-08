@@ -1,6 +1,8 @@
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { cn } from "@repo/ui/lib/utils";
+import { DotBackground } from "@repo/ui/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,12 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(inter.className, "bg-slate-100 relative min-h-screen")}
+      >
+        <DotBackground />
+        <div className="">{children}</div>
+      </body>
     </html>
   );
 }

@@ -67,3 +67,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .outer-box-shadow {
+    box-shadow:
+  /* top right, red shadow */
+      -5px -5px 20px 0px rgba(255, 255, 255, 0.394),
+      5px 5px 20px 0px rgba(0, 0, 0, 0.305);
+    /* bottom left, blue shadow */
+  }
+  .inner-box-shadow {
+    box-shadow: inset 8px 8px 100px rgba(174, 183, 219, 0.533);
+  }
+}

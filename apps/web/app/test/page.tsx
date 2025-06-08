@@ -1,25 +1,14 @@
-import { Dashboard, DotBackground, TestCard } from "@repo/ui/components";
 import Image from "next/image";
 
-const Home = () => {
+const TestPage = () => {
   return (
-    <div className="p-10 h-[100vh]">
-      <div className="bg-white p-5 h-full w-full outer-box-shadow rounded-3xl flex flex-wrap flex-col md:flex-row justify-center">
-        <div className="flex w-full flex-col md:flex-row [&>*]:border [&>*]:border-black gap-5">
-          <div className="md:w-[20%]">
-            <ProfileCard />
-          </div>
-          <div className="md:w-[50%]">My Recent Works</div>
-          <div className="md:w-[30%]">Stack, Quick Links & Player</div>
-        </div>
-      </div>
+    <div className="p-10 flex items-center justify-center">
+      <ProfileCard />
     </div>
   );
 };
 
-export default Home;
-
-// hover shadow class:   [&>*:hover]:shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)]
+export default TestPage;
 
 const ProfileCard = () => {
   return (
@@ -37,14 +26,14 @@ const ProfileCard = () => {
                           flex items-center justify-center"
           >
             <div
-              className="w-48 h-48 rounded-full bg-gray-200 
+              className="w-48 h-72 rounded-3xl bg-gray-200 
                             shadow-[15px_15px_30px_rgba(0,0,0,0.2),-15px_-15px_30px_rgba(255,255,255,0.8)]
                             overflow-hidden"
             >
               <Image
                 src="/me.jpg"
                 width={200}
-                height={200}
+                height={400}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />

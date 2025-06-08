@@ -54,6 +54,14 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "neo-light": "#e0e5ec",
+        "neo-dark": "#a3b1c6",
+        "neo-bg": "#e0e5ec",
+      },
+      boxShadow: {
+        "neo-inset": "inset 6px 6px 12px #a3b1c6, inset -6px -6px 12px #ffffff",
+        "neo-outset": "6px 6px 12px #a3b1c6, -6px -6px 12px #ffffff",
+        "neo-flat": "3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff",
       },
       borderRadius: {
         lg: "var(--radius)",
